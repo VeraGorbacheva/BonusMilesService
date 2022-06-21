@@ -1,7 +1,11 @@
 public class Main {
 
     public static void main(String[] args) {
-        int x = 100;
-    System.out.println(x / 20);
+        int price = 10_000;
+
+        BonusMilesService service = new BonusMilesService();
+        int miles = service.calculate(price);
+
+    System.out.println(miles);
     }
 }
